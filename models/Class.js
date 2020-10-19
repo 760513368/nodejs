@@ -1,13 +1,14 @@
 const sequelize = require('./db');
 const { DataTypes } = require('sequelize');
+const Student = require('./Student');
 
-const Admin = sequelize.define('Admin', {
-    loginId: {
+const Class = sequelize.define('Class', {
+    name: {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    loginPwd: {
-        type: DataTypes.STRING,
+    openDate: {
+        type: DataTypes.DATE,
         allowNull: false,
     }
 }, {
@@ -16,5 +17,6 @@ const Admin = sequelize.define('Admin', {
     paranoid: true,
 });
 
+Class.hasOne(Student);
 
-module.exports = Admin;
+module.exports = Class;

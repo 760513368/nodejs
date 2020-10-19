@@ -1,12 +1,19 @@
 const sequelize = require('./db');
 const { DataTypes } = require('sequelize');
 
-const Admin = sequelize.define('Admin', {
-    loginId: {
+const Book = sequelize.define('Book', {
+    name: {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    loginPwd: {
+    imgurl: {
+        type: DataTypes.STRING,
+    },
+    publishDate: {
+        type: DataTypes.DATE,
+        allowNull: false,
+    },
+    author: {
         type: DataTypes.STRING,
         allowNull: false,
     }
@@ -17,4 +24,4 @@ const Admin = sequelize.define('Admin', {
 });
 
 
-module.exports = Admin;
+module.exports = Book;
