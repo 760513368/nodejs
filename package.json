@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "nodejs exercise.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/760513368/nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/760513368/nodejs/issues"
+  },
+  "homepage": "https://github.com/760513368/nodejs#readme",
+  "dependencies": {
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}
