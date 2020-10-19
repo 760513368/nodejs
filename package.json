@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/760513368/nodejs#readme",
   "dependencies": {
+    "mock": "^0.1.1",
+    "mockjs": "^1.1.0",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
   }
