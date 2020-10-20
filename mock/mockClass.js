@@ -12,8 +12,6 @@ const result = Mock.mock(
     }
 ).datas;
 
-console.log(result);
 
-require('../models/relation')
 const Class = require('../models/Class');
 Class.bulkCreate(result);

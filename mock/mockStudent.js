@@ -12,6 +12,4 @@ const result = Mock.mock({
     }]
 }).datas;
 
-console.log(result);
-require('../models/relation');
 Student.bulkCreate(result);
