@@ -1,8 +1,8 @@
 // require('./spider/fetchBooks');
 const adminServ = require('./services/adminService');
 const studentServ = require('./services/studentService');
-require('./models/relation')
-require('./mock/mockAdmin')
+// require('./models/relation')
+// require('./mock/mockAdmin')
 
 // adminServ.getAllAdmin().then(res => {
 //     console.log(res);
@@ -20,3 +20,4 @@ require('./mock/mockAdmin')
 //     console.log(res);
 // })
 
+require('./moment/index')
